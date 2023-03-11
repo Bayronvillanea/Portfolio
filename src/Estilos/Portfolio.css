@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+  
+  .Contenedor-Cards {
+    color: rgb(0, 0, 0);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 15%;
+  }
+  
+  .cads {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .cads-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    height: 100%;
+    
+  }
+
+  
+  .Portfolio-H2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .Portfolio-6 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+
+  .Portfolio-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+ 
+  
+  .Portfolio-P {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .Portfolio-link {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .Portfolio-link:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  
+  @media screen and (max-width: 768px) {
+    .cads {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
