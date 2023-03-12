@@ -25,7 +25,7 @@ export default function Portfolio() {
                     <i className='html5'> <img src={ht} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='css3'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <a className='Portfolio-link' href="https://bespoke-gumdrop-39d59e.netlify.app">Visit Web</a>
+                    <a className='Portfolio-link' href="https://pokemon-api-bay.vercel.app/">Visit Web</a>
                 </div>
                 <div className='cads-grid'>
                     <h6 className='Portfolio-6'>Login</h6>
@@ -35,7 +35,7 @@ export default function Portfolio() {
                     <i className='html5'> <img src={ht} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='css3'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <a className='Portfolio-link' href="https://amazing-moonbeam-2c69fa.netlify.app">Visit Web</a>
+                    <a className='Portfolio-link' href="https://login-fawn-gamma.vercel.app/">Visit Web</a>
                 </div>
                 <div className='cads-grid'>
                     <h6 className='Portfolio-6'>Portfolio</h6>
@@ -46,7 +46,7 @@ export default function Portfolio() {
                     <i className='css3'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='rt'><img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <a className='Portfolio-link' href="">Visit Web</a>
+                    <a className='Portfolio-link' href="https://portfoliobv.vercel.app/">Visit Web</a>
                 </div>
             </div>
         </section>
