@@ -8,7 +8,7 @@ html {
   right: 0;
   z-index: 100;
   background-color: #ffffff;
-  padding: 10px;
+  padding: -5px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,7 +21,7 @@ html {
 .Contenedor-header ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 19px;
 }
 
 .Contenedor-header a {
@@ -33,7 +33,7 @@ html {
 }
 
 .main-content {
-  margin-top: 80px; /* ajusta según la altura real del encabezado */
+  margin-top: 70px; /* ajusta según la altura real del encabezado */
 }
 
   
@@ -47,7 +47,7 @@ html {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px 16px;
+    padding: 12px 15px;
     text-decoration: none;
   }
   .Contenedor-nav-header a{
