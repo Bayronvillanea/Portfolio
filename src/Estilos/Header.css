@@ -1,12 +1,47 @@
 html {
   scroll-behavior: smooth;
 }
+.Contenedor-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Contenedor-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Contenedor-header ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.Contenedor-header a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-content {
+  margin-top: 80px; /* ajusta según la altura real del encabezado */
+}
 
   
   .Contenedor-nav-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
   }
   .Contenedor-nav-header a {
     display: block;
@@ -62,6 +97,8 @@ html {
     }
   }
   
+/*hamburgesa*/
+
 
 
 
