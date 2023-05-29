@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 .Contenedor-header {
   position: fixed;
   top: 0;
@@ -9,123 +5,90 @@ html {
   right: 0;
   z-index: 100;
   background-color: #ffffff;
-  padding: -5px;
+  padding: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.Contenedor-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Contenedor-header ul {
-  list-style: none;
-  display: flex;
-  gap: 19px;
-}
-
-.Contenedor-header a {
-  color: #333333;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.main-content {
-  margin-top: 70px; /* ajusta según la altura real del encabezado */
+  
 }
 
 .Contenedor-nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
 
-.Contenedor-nav-header a {
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
   display: block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 12px 15px;
-  text-decoration: none;
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+  
 }
 
-.Contenedor-nav-header a {
-  font-family: sans-serif;
-  font-size: 18px;
-}
-
-.Contenedor-nav-header a:hover {
-  background-color: #ddd;
-  color: #000;
-  text-decoration: none;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 0 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.ul-heaeder {
+.ul-header {
+  
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
+  gap: 19px;
 }
 
-.li-header {
-  margin: 0 1rem;
-}
 
+
+.Header-a:hover {
+  
+  background-color: rgb(189, 189, 189);
+  border-radius: 1px;
+}
 .Header-a {
-  color: white;
+  
+  margin: 3px;
+  color: #333333;
   text-decoration: none;
-  padding: 0.5rem;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  
 }
 
 .Header-a:hover {
-  background-color: black;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
-  .ul-heaeder {
+  .Contenedor-nav-header {
     flex-direction: column;
     align-items: flex-start;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-   
-  }
-
-  .ul-heaeder.show-nav {
-    max-height: 400px; 
     
-  }
-
-  .li-header {
-    margin: 1rem 0;
   }
 
   .hamburger {
     display: block;
-    
-    cursor: pointer;
-    position:relative;
-    top: 0;
-    left:0 ;
   }
 
-  .hamburger span {
-    display: block;
-    position:relative;
-    top: 0;
-    left:0 ;
-    width: 25px;
-    height: 3px;
-    background-color: black;
-    margin-bottom: 5px;
-    margin-top: 8px;
-    transition: transform 0.3s ease-in-out;
+  .ul-header {
+    max-height: 0;
+    overflow: hidden;
+    
   }
+
+  .ul-header.show-nav {
+    margin-top: 15px;
+    text-align: left;
+    display: block;
+    max-height: 400px;
+  }
+
 
   .hamburger.show-nav span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
