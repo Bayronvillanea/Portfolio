@@ -37,17 +37,7 @@ export default function Portfolio() {
                     <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <a className='Portfolio-link' href="https://login-fawn-gamma.vercel.app/">Visit Web</a>
                 </div>
-                <div className='cads-grid'>
-                    <h6 className='Portfolio-6'>Portfolio</h6>
-                    <img src={pf} alt='Portfolio' className='Portfolio-img'/>
-                    <p className='Portfolio-P'>Portfolio created for people to see my projects and knowledge that I have.</p>
-                    <h6 className='Portfolio-6'>Used technologies.</h6>
-                    <i className='html5'> <img src={ht} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <i className='css3'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <i className='rt'><img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
-                    <a className='Portfolio-link' href="https://portfoliobv.vercel.app/">Visit Web</a>
-                </div>
+               
             </div>
         </section>
     </div>
