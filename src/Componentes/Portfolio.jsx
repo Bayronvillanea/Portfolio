@@ -9,6 +9,10 @@ import gt from '../img/git.svg'
 import pk from '../img/poke-api.PNG'
 import lg from '../img/login.PNG'
 import pf from '../img/portfolio.PNG'
+import form from '../img/formulario.png'
+import lg2 from '../img/login2.png'
+import pk2 from '../img/poke-api2.png'
+import twl from '../img/tailwind.svg'
 //import { Link } from'react-router-dom'
 
 export default function Portfolio() {
@@ -19,7 +23,7 @@ export default function Portfolio() {
             <div className="cads">
                 <div className='cads-grid'>
                     <h6 className='Portfolio-6'>Poke-Api</h6>
-                    <img src={pk} alt='poke-api' className='Portfolio-img'/>
+                    <img src={pk2} alt='poke-api' className='Portfolio-img'/>
                     <p className='Portfolio-P'>It is a pokemon search engine that shows the statistics</p>
                     <h6 className='Portfolio-6'>Used technologies.</h6>
                     <i className='html5'> <img src={ht} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
@@ -29,13 +33,24 @@ export default function Portfolio() {
                 </div>
                 <div className='cads-grid'>
                     <h6 className='Portfolio-6'>Login</h6>
-                    <img src={lg} alt='Login' className='Portfolio-img'/>
+                    <img src={lg2} alt='Login' className='Portfolio-img'/>
                     <p className='Portfolio-P'>It was created for the purpose of practice styles and handling validation and errors.</p>
                     <h6 className='Portfolio-6'>Used technologies.</h6>
                     <i className='html5'> <img src={ht} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='css3'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <i className='js'><img src={js} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     <a className='Portfolio-link' href="https://login-fawn-gamma.vercel.app/">Visit Web</a>
+                </div>
+
+                <div className='cads-grid'>
+                    <h6 className='Portfolio-6'>Formulario</h6>
+                    <img src={form} alt='Login' className='Portfolio-img'/>
+                    <p className='Portfolio-P'>This form is designed for the practice of different technologies for personal improvement.</p>
+                    <h6 className='Portfolio-6'>Used technologies.</h6>
+                    <i className='react'> <img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    <i className='react'> <img src={twl} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    
+                    <a className='Portfolio-link' href="https://formulario-taupe.vercel.app/">Visit Web</a>
                 </div>
                
             </div>
