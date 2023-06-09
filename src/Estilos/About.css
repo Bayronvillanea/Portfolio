@@ -8,11 +8,14 @@
     padding: 10px;
   }
   .about-p {
+    display: flex;
     font-size: 1.3em;
     line-height: 1.5;
     font-weight: 400;
     color: #000000;
     margin-bottom: 1em;
+    text-align: left;
+    justify-content: left;
   }
   
   
@@ -43,6 +46,7 @@
     }
     .about-p {
       font-size: 1em;
+      justify-content: left;
     }
     
   }
