@@ -13,6 +13,7 @@ import form from '../img/formulario.png'
 import lg2 from '../img/login2.png'
 import pk2 from '../img/poke-api2.png'
 import twl from '../img/tailwind.svg'
+import stw from '../img/starwars.png'
 //import { Link } from'react-router-dom'
 
 export default function Portfolio() {
@@ -51,6 +52,19 @@ export default function Portfolio() {
                     <i className='react'> <img src={twl} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
                     
                     <a className='Portfolio-link' href="https://formulario-taupe.vercel.app/">Visit Web</a>
+                </div>
+
+
+                <div className='cads-grid'>
+                    <h6 className='Portfolio-6'>StarWars</h6>
+                    <img src={stw} alt='Login' className='Portfolio-img'/>
+                    <p className='Portfolio-P'>Clon the website practice</p>
+                    <h6 className='Portfolio-6'>Used technologies.</h6>
+                    <i className='react'> <img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    <i className='react'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    
+                    
+                    <a className='Portfolio-link' href="https://star-wars-kohl-eta.vercel.app/">Visit Web</a>
                 </div>
                
             </div>
