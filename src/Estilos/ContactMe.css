@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+    max-width: 800px;
+    margin: 0 auto;
+  
 }
 .Contendor-Contact {
   background-color: #d8d8d8;
@@ -24,6 +28,7 @@
 .Contenedor-ContactMe {
   display: flex;
   justify-content: center;
+  
 }
 
 .Contenedor-ContactMe a {
