@@ -14,6 +14,7 @@ import lg2 from '../img/login2.png'
 import pk2 from '../img/poke-api2.png'
 import twl from '../img/tailwind.svg'
 import stw from '../img/starwars.png'
+import tdList from '../img/todo-list.png'
 //import { Link } from'react-router-dom'
 
 export default function Portfolio() {
@@ -69,7 +70,7 @@ export default function Portfolio() {
 
                 <div className='cads-grid'>
                     <h6 className='Portfolio-6'>Todo-list</h6>
-                    <img src={stw} alt='Login' className='Portfolio-img'/>
+                    <img src={tdList} alt='Login' className='Portfolio-img'/>
                     <p className='Portfolio-P'>A task list where you can add, delete and edit your tasks</p>
                     <h6 className='Portfolio-6'>Used technologies.</h6>
                     <i className='react'> <img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
