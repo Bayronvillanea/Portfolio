@@ -66,6 +66,18 @@ export default function Portfolio() {
                     
                     <a className='Portfolio-link' href="https://star-wars-kohl-eta.vercel.app/">Visit Web</a>
                 </div>
+
+                <div className='cads-grid'>
+                    <h6 className='Portfolio-6'>Todo-list</h6>
+                    <img src={stw} alt='Login' className='Portfolio-img'/>
+                    <p className='Portfolio-P'>A task list where you can add, delete and edit your tasks</p>
+                    <h6 className='Portfolio-6'>Used technologies.</h6>
+                    <i className='react'> <img src={rt} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    <i className='react'> <img src={css} alt="" width="19" height="19" style={{margin: '20px'}} /></i>
+                    
+                    
+                    <a className='Portfolio-link' href="https://todo-list-brown-two-48.vercel.app/">Visit Web</a>
+                </div>
                
             </div>
         </section>
