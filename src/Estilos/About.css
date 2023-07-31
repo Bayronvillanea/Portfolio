@@ -31,11 +31,37 @@
    
     
   }
-  
+  .recomedacionCard{
+    font-size: 2em;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+  }
+  .pdfDownload{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  .pdfDownload:hover{
+    background-color: #333;
+    color: #fff;
+  }
   @media (max-width: 768px) {
     .about {
       margin-left: 0;
       padding: 5px;
+    }
+    .recomedacionCard{
+      margin-left: 0;
+      padding: 5px;
+    }
+    .recomedacionCard{
+      margin-top: 10px;
     }
     
    .about-h2 {
@@ -46,7 +72,14 @@
     .about-h2 {
       font-size: 1.5em;
     }
+    .recomedacionCard{
+      font-size: 1.5em;
+    }
     .about-p {
+      font-size: 1em;
+      justify-content: left;
+    }
+    .recomedacionCard{
       font-size: 1em;
       justify-content: left;
     }

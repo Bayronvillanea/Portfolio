@@ -16,6 +16,7 @@ export default function ContactMe() {
             <a href="https://www.linkedin.com/in/bayron-villanea-a95277174/">  <i className='lk'><img src={lk} alt="" width="50" height="50" style={{margin: '20px'}} /></i></a>
             <a href="https://www.instagram.com/bayron_vh/"><i className='ins'> <img src={ins} alt="" width="50" height="50" style={{margin: '20px'}} /></i></a>
             <a href="https://www.facebook.com/bayron.villanea.16/"> <i className='fb'><img src={fb} alt="" width="50" height="50" style={{margin: '20px'}} /></i></a>
+            
         </section>
     </div>
   )
