@@ -13,7 +13,7 @@ export default function Skills() {
     <div className='Contenedor-Skills'>
         <section className='Contenedor-Section'>
         <h2 className='Skills-h2' id='SkillsP'>SKILLS</h2>
-        <p className='Skills-p'>I am learning React and TypeScript</p>
+        <p className='Skills-p'>I am learning TypeScript</p>
         <section className='Section-Icon'>
             
             <i className='html5'> <img src={ht} alt="" width="50" height="50" style={{margin: '20px'}} /></i>
