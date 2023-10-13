@@ -1,6 +1,7 @@
 import React from 'react'
 import '../Estilos/About.css'
 import cartaRecomendacion from '../pdf/cartaRecomendacion.pdf';
+import cv from "../pdf/CvBayroningles.pdf"
 export default function About() {
    
     
@@ -15,6 +16,9 @@ Learning about technology by my own has taught me that all is about setting goal
       <h2 className='recomedacionCard'>RECOMMENDATION LETTER</h2>
       <a href={cartaRecomendacion} download="cartaRecomendacion.pdf">
         <button className='pdfDownload'>Download PDF</button>
+      </a>
+      <a href={cv} download="BayronVillanea.pdf">
+        <button className='pdfDownload' style={{marginLeft:"10px"}}>Download CV</button>
       </a>
     </div>
     
