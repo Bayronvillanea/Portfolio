@@ -51,7 +51,7 @@ export default function Header() {
         <button onClick={toggleMenu} className="text-white">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7 mr-4 mt-2 mr-5"
+            className={`h-6 w-6 mr-2 mt-2 mr-5 ${isMenuOpen ? 'ml-0' : 'ml-3'}`}
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
