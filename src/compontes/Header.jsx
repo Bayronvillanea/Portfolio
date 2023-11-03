@@ -40,7 +40,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href='#' download={pdf} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <a href={pdf} download={pdf} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               CV
             </a>
           </li>
