@@ -1,6 +1,7 @@
 import  { useState } from 'react';
 import github from '../img/github.svg';
 import linkedin from '../img/linkedin.svg';
+import pdf from '../pdf/CurrículumBayronVillaneaing..pdf'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +40,7 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a href="{{pdf}}" target="_blank" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <a href='#' download={pdf} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               CV
             </a>
           </li>
