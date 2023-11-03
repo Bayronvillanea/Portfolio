@@ -1,4 +1,5 @@
-#Bayron Villanea
+<h1>Bayron Villanea</h1>
+
 this is my portfolio related to react tailwind
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
