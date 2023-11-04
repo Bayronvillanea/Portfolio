@@ -3,6 +3,9 @@ import github from '../img/github.svg';
 import linkedin from '../img/linkedin.svg';
 import pdf from '../pdf/CurrículumBayronVillaneaing..pdf'
 
+
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -15,29 +18,29 @@ export default function Header() {
       <div className="lg:flex hidden">
         <ul className="flex space-x-6">
           <li>
-            <a href="/" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <Link to={'/home'} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#about" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <Link to={'/aboutme'} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               About me
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#skills" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <Link to={"/stack"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
             Stack
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#projects" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <Link to={"/works"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/#contact" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+            <Link to={"/contact"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
             <a href={pdf} download={pdf} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
@@ -81,29 +84,29 @@ export default function Header() {
         <div className="lg:hidden block">
           <ul className="flex flex-col space-y-4">
             <li>
-              <a href="/" className="text-white hover:text-gray-400 font-dm-sans text-20 font-normal font-semibold leading-26">
+              <Link to={'/home' }className="text-white hover:text-gray-400 font-dm-sans text-20 font-normal font-semibold leading-26">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#about" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
-                About me
-              </a>
+            <Link to={'/aboutme'} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              About me
+            </Link>
             </li>
             <li>
-              <a href="/#skills" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              <Link to={"/stack"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#projects" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              <Link to={"/works"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/#contact" className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              <Link to={"/contact"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
               <a  href={pdf} download={pdf}  className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">

@@ -1,4 +1,7 @@
 import imgMe from '../img/ME.jpg';
+import Projects from './Projects';
+import Skills from './Skills';
+import Footer from './Footer';
 
 export default function Section() {
   return (
@@ -13,7 +16,11 @@ export default function Section() {
           </div>
         </div>
       </section>
-      
+      <div className='mt-60'>
+      <Skills />
+      <Projects />
+      <Footer />
+      </div>
     </div>
   );
 }

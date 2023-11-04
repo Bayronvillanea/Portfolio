@@ -6,11 +6,15 @@ import react from '../img/react.svg';
 import typescript from '../img/typescript.svg';
 import tailwind from '../img/tailwind.svg';
 import mysql from '../img/mysql.svg';
-
+import { useEffect } from 'react';
 export default function Skills() {
+  useEffect(() => {
+    // Desplaza la página al principio cuando se carga
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <section className="mt-[-15rem] p-6 w-1193">
-      <h2 className="text-2xl font-semibold text-center mb-4 text-yellow-50">My Tech Stack</h2>
+      <h2 className="text-2xl font-semibold text-center mb-4 text-white">My Tech Stack</h2>
       <h3 className="text-lg font-normal text-center text-gray-600 mb-6">Technologies I’ve been working with recently</h3>
       <div className="flex flex-wrap justify-center gap-6">
         <img src={css} alt="css" className="w-16 h-16" />

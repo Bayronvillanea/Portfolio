@@ -9,7 +9,8 @@ export default {
         enlace:"#A7A7A7",
         raya:"#42446E",
         demo:"#fff",
-        textcards:"#CCC"
+        textcards:"#CCC",
+        titulo:"#42446E"
       },
     },
   },

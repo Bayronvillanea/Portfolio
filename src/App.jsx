@@ -1,24 +1,35 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './compontes/Header';
+import Section from './compontes/Section';
+import Projects from './compontes/Projects';
+import Skills from './compontes/Skills';
+import Footer from './compontes/Footer';
+import AboutMe from './compontes/AboutMe';
+import Home from './compontes/Home';
+import Stack from './compontes/Stack';
+import Works from './compontes/Works';
+import Contact from './compontes/Contact';
 
-import Header from "./compontes/Header"
-import Section from "./compontes/Section"
-import Projects from "./compontes/Projects"
-import Skills from "./compontes/Skills"
-import Footer from "./compontes/Footer"
 function App() {
-
-
   return (
- <div className="bg-darkMode">
-    <Header /> 
-    <Section />
-    <Skills />
-    <Projects />
-    <Footer />
- </div>
+   
+    <Router className="bg-darkMode">
+    <Header />
+   
+    <Routes>
+      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Section />} />
+      <Route path="/" element={<Skills />} />
+      <Route path="/" element={<Projects />} />
+      <Route path="/" element={<Footer />} />
+      <Route path="/stack" element={<Stack />} />
+      <Route path="/works" element={<Works />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/aboutme" element={<AboutMe />} />
   
-
-  
-  )
+    </Routes>
+  </Router>
+  );
 }
 
-export default App
+export default App;

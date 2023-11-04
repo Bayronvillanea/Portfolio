@@ -1,7 +1,12 @@
 import github from "../img/github.svg";
 import linked from "../img/linkedin.svg";
-
+import { Link } from "react-router-dom";
+import { useEffect } from "react";
 export default function Footer() {
+  useEffect(() => {
+    // Desplaza la página al principio cuando se carga
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <footer className=" text-enlace py-8 mt-8">
       <div className="container mx-auto flex flex-col items-center">
@@ -14,14 +19,19 @@ export default function Footer() {
        
           <div className="flex items-center ">
             <i className="fas fa-envelope mr-2"></i>
-            <span>bayronvillanea.info@gmail.com</span>
+            <a
+        href="mailto:Bayronvillanea.info@gmail.com"
+        className="font-semibold  hover:underline"
+      >
+        Bayronvillanea.info@gmail.com   
+      </a>
           </div>
         
           <div className="flex space-x-4">
-            <a href="#" className="text-white  ">
+            <a href="https://github.com/Bayronvillanea" className="text-white  ">
               <img src={github} className="h-6 w-6 inline-block transition-opacity hover:opacity-75" alt="GitHub"></img>
             </a>
-            <a href="#" className="text-white  ">
+            <a href="https://www.linkedin.com/in/bayron-villanea-a95277174/" className="text-white  ">
               <img src={linked} className="h-6 w-6 inline-block transition-opacity hover:opacity-75" alt="LinkedIn"></img>
             </a>
           </div>
@@ -29,11 +39,11 @@ export default function Footer() {
         <hr className="w-11/12	 border-t border-raya mb-6" />
         <div className="flex space-x-4">
           {/* Enlaces a las secciones */}
-          <a href="#" className="text-enlace hover:underline">Home</a>
-          <a href="#" className="text-enlace hover:underline">About</a>
-          <a href="#" className="text-enlace hover:underline">Stack</a>
-          <a href="#" className="text-enlace hover:underline">Projects</a>
-          <a href="#" className="text-enlace hover:underline">Contact</a>
+          <Link to={'/home'} className="text-enlace hover:underline">Home</Link>
+          <Link to={'/aboutme'} className="text-enlace hover:underline">About</Link>
+          <Link to={'/stack'} className="text-enlace hover:underline">Stack</Link>
+          <Link to={'/works'} className="text-enlace hover:underline">Projects</Link>
+          <Link to={'/contact'} className="text-enlace hover:underline">Contact</Link>
         </div>
       </div>
     </footer>
