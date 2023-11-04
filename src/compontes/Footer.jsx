@@ -37,7 +37,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className="w-11/12	 border-t border-raya mb-6" />
-        <div className="flex space-x-4">
+        <div className="flex flex-wrap justify-center md:justify-start space-x-3 ">
           {/* Enlaces a las secciones */}
           <Link to={'/home'} className="text-enlace hover:underline">Home</Link>
           <Link to={'/aboutme'} className="text-enlace hover:underline">About</Link>
