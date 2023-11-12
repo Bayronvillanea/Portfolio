@@ -3,6 +3,7 @@ import start from '../img/start.jpg'
 import poke from '../img/poke.png'
 import form2 from '../img/form2.png'
 import gast from '../img/gast.png'
+import POK from '../img/POK.png'
 export default function Projects() {
   const projects = [
     {
@@ -34,6 +35,14 @@ export default function Projects() {
       technologies: 'React',
       githubLink: 'https://github.com/Bayronvillanea/control-gastos',
       demoLink: 'https://control-gastos-ten.vercel.app/',
+    },
+    {
+      title: 'Pokemón App',
+      image: POK ,
+      description: 'You can search for your favorite pokemon and see its statistics.',
+      technologies: 'React , Tailwind  ',
+      githubLink: 'https://github.com/Bayronvillanea/PokeApiReact',
+      demoLink: 'https://poke-api-react-psi.vercel.app/',
     },
     
     // Agrega más proyectos según sea necesario
