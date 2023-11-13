@@ -44,6 +44,7 @@ export default function Footer() {
           <Link to={'/stack'} className="text-enlace hover:underline">Stack</Link>
           <Link to={'/works'} className="text-enlace hover:underline">Projects</Link>
           <Link to={'/contact'} className="text-enlace hover:underline">Contact</Link>
+          <Link to={'/Certificaciones'} className="text-enlace hover:underline">Certificate</Link>
         </div>
       </div>
     </footer>

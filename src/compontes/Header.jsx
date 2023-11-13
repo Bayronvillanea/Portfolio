@@ -43,6 +43,11 @@ export default function Header() {
             </Link>
           </li>
           <li>
+              <Link to={"/Certificaciones"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              Certificate
+              </Link>
+            </li>
+          <li>
             <a href={pdf} download={pdf} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
               CV
             </a>
@@ -106,6 +111,11 @@ export default function Header() {
             <li>
               <Link to={"/contact"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link to={"/Certificaciones"} className="text-white hover:text-gray-400 font-dm-sans text-center text-20 font-normal font-semibold leading-26">
+              Certificate
               </Link>
             </li>
             <li>

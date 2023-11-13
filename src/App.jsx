@@ -9,6 +9,7 @@ import Home from './compontes/Home';
 import Stack from './compontes/Stack';
 import Works from './compontes/Works';
 import Contact from './compontes/Contact';
+import Certificaciones from './compontes/Certificaciones';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/works" element={<Works />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/Certificaciones" element={<Certificaciones />} />
   
     </Routes>
   </Router>
