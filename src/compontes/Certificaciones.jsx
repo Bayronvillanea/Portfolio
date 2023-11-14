@@ -20,7 +20,7 @@ export default function Certificaciones() {
 
   return (
     <div className="container mx-auto mt-8 p-4">
-      <h1 className="text-3xl font-bold mb-4 text-center text-white">Certificaciones</h1>
+      <h1 className="text-3xl font-bold mb-4 text-center text-white">Certificate</h1>
 
       <div className="flex flex-wrap justify-center">
         <div className="bg-fondo p-4 m-4 rounded shadow-md w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
