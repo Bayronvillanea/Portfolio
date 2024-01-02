@@ -4,6 +4,7 @@ import poke from '../img/poke.png'
 import form2 from '../img/form2.png'
 import gast from '../img/gast.png'
 import POK from '../img/POK.png'
+import roofing from '../img/roofing.png'
 export default function Projects() {
   const projects = [
     {
@@ -43,6 +44,14 @@ export default function Projects() {
       technologies: 'React , Tailwind  ',
       githubLink: 'https://github.com/Bayronvillanea/PokeApiReact',
       demoLink: 'https://poke-api-react-psi.vercel.app/',
+    },
+    {
+      title: 'American Roofing Solutions',
+      image: roofing ,
+      description: 'We carry out installation and maintenance of roofs and exteriors. More than 20 years of experience backs our dedication to quality and customer service in New Jersey.',
+      technologies: 'React , Tailwind  ',
+      githubLink: '#',
+      demoLink: 'https://americanroofingsolutionsnj.com/',
     },
     
     // Agrega más proyectos según sea necesario
