@@ -29,6 +29,14 @@ export default function AboutMe() {
           <h2 className="text-4xl font-bold mb-4 text-textcards" style={titleStyles}>
             Work Experience
           </h2>
+          <p className="text-l font-bold  text-enlace">Web developer</p>
+          <p className="text-l font-bold mb-4 text-enlace">American Roofing Solutions(Company)</p>
+          <p className="text-enlace mb-4">
+           Crear el sitio web de principio a fin utilizando una estructura limpia para la empresa y las necesidades del cliente como desarrollador web utilizando tecnologías del mercado actual como React.js y Tailwind.
+          </p>
+
+
+
           <p className="text-l font-bold  text-enlace">Professional experience</p>
           <p className="text-l font-bold mb-4 text-enlace">Tienda Vargas(Company)</p>
           <p className="text-enlace">
