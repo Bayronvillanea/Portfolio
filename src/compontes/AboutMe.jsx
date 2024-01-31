@@ -32,7 +32,7 @@ export default function AboutMe() {
           <p className="text-l font-bold  text-enlace">Web developer</p>
           <p className="text-l font-bold mb-4 text-enlace">American Roofing Solutions(Company)</p>
           <p className="text-enlace mb-4">
-           Crear el sitio web de principio a fin utilizando una estructura limpia para la empresa y las necesidades del cliente como desarrollador web utilizando tecnologías del mercado actual como React.js y Tailwind.
+          Create the website from start to finish using a clean structure for the company and the client's needs as a web developer using technologies on the current market such as React.js and Tailwind.
           </p>
 
 
