@@ -1,7 +1,7 @@
 import  { useState } from 'react';
 import github from '../img/github.svg';
 import linkedin from '../img/linkedin.svg';
-import pdf from '../pdf/CurrículumBayronVillaneaing..pdf'
+import pdf from "../pdf/CurrículumBayronVillaneaing.pdf"
 
 
 import { Link } from 'react-router-dom';
