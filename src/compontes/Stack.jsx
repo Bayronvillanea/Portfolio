@@ -16,7 +16,7 @@ export default function Stack() {
     <div className="min-h-screen flex flex-col items-center justify-center mt-[-10]">
       <section className="p-6 w-11/12 max-w-screen-md">
         <h2 className="text-2xl font-semibold text-center mb-4 text-yellow-50">My Tech Stack</h2>
-        <h3 className="text-lg font-normal text-center text-gray-600 mb-6">Technologies I’ve been working with recently</h3>
+        <h3 className="text-lg font-normal text-center  text-gray-200 mb-6">Technologies I’ve been working with recently</h3>
         <div className="flex flex-wrap justify-center gap-6">
           <img src={css} alt="css" className="w-16 h-16" />
           <img src={html} alt="html" className="w-16 h-16" />
