@@ -5,6 +5,7 @@ import form2 from '../img/form2.png'
 import gast from '../img/gast.png'
 import POK from '../img/POK.png'
 import roofing from '../img/roofing.png'
+import marketing from '../img/marketing.png'
 
 export default function Projects() {
   const projects = [
@@ -53,6 +54,14 @@ export default function Projects() {
       technologies: 'React , Tailwind  ',
       githubLink: '#',
       demoLink: 'https://americanroofingsolutionsnj.com/',
+    },
+    {
+      title: 'Agency Marketing',
+      image: marketing ,
+      description: 'Creating a website for a digital marketing company for better visibility on the internet.',
+      technologies: 'React , Tailwind  ',
+      githubLink: 'https://github.com/Bayronvillanea/agencymarketing',
+      demoLink: 'https://agencymarketing-seven.vercel.app/',
     },
     
     // Agrega más proyectos según sea necesario
