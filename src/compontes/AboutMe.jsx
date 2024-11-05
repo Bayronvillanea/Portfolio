@@ -17,7 +17,7 @@ export default function AboutMe() {
             About Me
           </h1>
           <p className="text-enlace ">
-          <p className="mb-5">👋 Greetings, I am Bayron Villanea, a Software Engineering student with two years of academic experience in college. My focus is on self-taught exploration of technology, with a firm commitment to continuous improvement, both personally and professionally. </p>
+          <p className="mb-5">👋 Greetings, I am Bayron Villanea, a Software Engineering. My focus is on self-taught exploration of technology, with a firm commitment to continuous improvement, both personally and professionally. </p>
           <p className="mb-5">
           👨‍💻 Currently, I am immersed in my Software Engineering studies, pursuing the goal of expanding my knowledge in this discipline. I aspire to be part of an organization that shares my values and gives me the opportunity to learn through solid internships and professional challenges.</p>
 
