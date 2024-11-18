@@ -6,6 +6,7 @@ import gast from '../img/gast.png'
 import POK from '../img/POK.png'
 import roofing from '../img/roofing.png'
 import marketing from '../img/marketing.png'
+import clinica from '../img/clinica.png'
 
 export default function Projects() {
   const projects = [
@@ -62,6 +63,14 @@ export default function Projects() {
       technologies: 'React , Tailwind  ',
       githubLink: 'https://github.com/Bayronvillanea/agencymarketing',
       demoLink: 'https://agencymarketing-seven.vercel.app/',
+    },
+    {
+      title: 'Dental Clinic',
+      image: clinica ,
+      description: 'Creation of a website for a dental clinic for better visibility on the internet and services offered to its clients showing results.',
+      technologies: 'React , Tailwind  ',
+      githubLink: 'https://github.com/Bayronvillanea/dentista',
+      demoLink: 'https://dentista-beta.vercel.app/',
     },
     
     // Agrega más proyectos según sea necesario
