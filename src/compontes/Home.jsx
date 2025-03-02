@@ -5,10 +5,9 @@ import Section from "./Section"
 export default function Home() {
   return (
     <>
-       
-        <Section />
-       
-     
+       <div className="min-h-screen bg-gray-900 overflow-hidden">
+      <Section />
+    </div>
     </>
   )
 }

@@ -14,7 +14,7 @@ import Certificaciones from './compontes/Certificaciones';
 function App() {
   return (
    
-    <Router className="bg-darkMode">
+    <Router className="bg-gray-900">
     <Header />
    
     <Routes>

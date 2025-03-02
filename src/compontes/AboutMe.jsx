@@ -1,70 +1,151 @@
-import  { useEffect } from 'react';
+import { useEffect } from 'react';
+import { motion } from 'framer-motion';
+
 export default function AboutMe() {
   useEffect(() => {
-    // Desplaza la página al principio cuando se carga
     window.scrollTo(0, 0);
   }, []);
-  const titleStyles = {
-    fontSize: '2rem',
-    fontWeight: 'bold',
+
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 max-w-screen-lg mx-auto">
-      <div className="p-8">
-        <div>
-          <h1 className="text-4xl font-bold mb-4 text-textcards" style={titleStyles}>
+    <div className="min-h-screen bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 mt-2">
+      <div className="max-w-4xl mx-auto">
+        {/* Sección About Me */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5 }}
+          className="mb-16"
+        >
+          <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent mb-8 md: mt-3">
             About Me
           </h1>
-          <p className="text-enlace ">
-          <p className="mb-5">👋 Greetings, I am Bayron Villanea, a Software Engineering. My focus is on self-taught exploration of technology, with a firm commitment to continuous improvement, both personally and professionally. </p>
-          <p className="mb-5">
-          👨‍💻 Currently, I am immersed in my Software Engineering studies, pursuing the goal of expanding my knowledge in this discipline. I aspire to be part of an organization that shares my values and gives me the opportunity to learn through solid internships and professional challenges.</p>
+          
+          <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+            <p className="flex items-start">
+              <span className="text-2xl mr-2">👋</span>
+              I'm Bayron Villanea, a passionate Software Engineer specializing in frontend development. 
+              My journey in tech combines formal education with relentless self-learning, always seeking 
+              to merge innovation with practical solutions.
+            </p>
 
-          My dedication and focus on constant learning are fundamental pillars that drive my growth, and I am willing to take on new challenges with enthusiasm and determination.
-          </p>
-        </div>
+            <div className="p-6 bg-gray-800 rounded-xl mt-8">
+              <h3 className="text-2xl font-bold text-blue-400 mb-4">Current Focus</h3>
+              <p className="flex items-center">
+                <span className="text-xl mr-2">🚀</span>
+                Advancing my expertise in modern web technologies while completing my  Software Engineer
+              </p>
+            </div>
+          </div>
+        </motion.div>
 
-        <div className="mt-6">
-          <h2 className="text-4xl font-bold mb-4 text-textcards" style={titleStyles}>
-            Work Experience
+        {/* Experiencia Laboral */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mb-16"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-teal-400 to-blue-400 bg-clip-text text-transparent mb-8">
+            Professional Journey
           </h2>
-          <p className="text-l font-bold  text-enlace">Web developer</p>
-          <p className="text-l font-bold mb-4 text-enlace">American Roofing Solutions(Company)</p>
-          <p className="text-enlace mb-4">
-          Create the website from start to finish using a clean structure for the company and the client's needs as a web developer using technologies on the current market such as React.js and Tailwind.
-          </p>
 
+          <div className="space-y-12">
+            {/* Experiencia 1 */}
+            <div className="bg-gray-800 p-8 rounded-2xl shadow-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">💻</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Web Developer</h3>
+                  <p className="text-blue-400">American Roofing Solutions | 2023 </p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-6">
+                Led full-stack development of company website using React + Tailwind CSS, resulting in 40% lead increase
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="tech-badge text-white">React</span>
+                <span className="tech-badge text-white">Tailwind</span>
+                <span className="tech-badge text-white">Node.js</span>
+              </div>
+            </div>
 
+            {/* Experiencia 2 */}
+            <div className="bg-gray-800 p-8 rounded-2xl shadow-xl">
+              <div className="flex items-center mb-4">
+                <div className="bg-teal-500 w-12 h-12 rounded-full flex items-center justify-center mr-4">
+                  <span className="text-2xl">🎮</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Full Stack Developer</h3>
+                  <p className="text-teal-400">Tienda Vargas | 2022</p>
+                </div>
+              </div>
+              <p className="text-gray-300 mb-6">
+                Developed internal training platform and gaming solutions using diverse tech stack
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="tech-badge text-white">C#</span>
+                <span className="tech-badge text-white">Unity</span>
+                <span className="tech-badge text-white">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
-          <p className="text-l font-bold  text-enlace">Professional experience</p>
-          <p className="text-l font-bold mb-4 text-enlace">Tienda Vargas(Company)</p>
-          <p className="text-enlace">
-            Make the operation of Moodle implementing the languages HTML, CSS which used a database to manage internal users. Implement the realization of a video game using C# programming language and Unity engine.
-          </p>
-          <p className="text-l font-bold mt-4 text-enlace">Academic experience</p>
-          <p className="text-enlace">
-        
-          Creation of a real estate website: Using Html, css, js, php and sql
-          technologies.<br/>
-          Creation of a bank: Using technologies with Java.<br/>
-          Creation of videogames: Creation of the Hollow Knight using C#
-          and unity.
-
-          </p>
-        </div>
-
-        <div className="mt-5">
-          <h2 className="text-4xl font-bold mb-4 text-textcards" style={titleStyles}>
-            Education
+        {/* Educación */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={sectionVariants}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent mb-8">
+            Education Path
           </h2>
-          <ul className="text-enlace">
-            <li>International University of the Americas (started in 2022)</li>
-            <li>CTP Santo Cristo de Esquipulas High School (Graduated in 2021)</li>
-            <li>Escuela presbítero Manuel Bernardo Gómez (Primary finished in 2014)</li>
-          </ul>
-        </div>
+
+          <div className="space-y-6">
+            <div className="bg-gray-800 p-6 rounded-xl flex items-start">
+              <div className="bg-purple-500 p-3 rounded-lg mr-4">
+                <span className="text-2xl">🎓</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white">B.Sc. Software Engineer</h3>
+                <p className="text-purple-400">International University of the Americas | 2022 - Present</p>
+                <p className="text-gray-400 mt-2">Relevant Coursework: Algorithms, Web Development, Software Architecture</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-800 p-6 rounded-xl flex items-start">
+              <div className="bg-green-500 p-3 rounded-lg mr-4">
+                <span className="text-2xl">🏫</span>
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white">Technical High School Diploma</h3>
+                <p className="text-green-400">CTP Santo Cristo de Esquipulas | 2014 - 2021</p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
+
+      <style jsx>{`
+        .tech-badge {
+          @apply px-3 py-1 bg-gray-700 text-blue-400 rounded-full text-sm font-mono;
+          transition: all 0.3s ease;
+        }
+        .tech-badge:hover {
+          @apply bg-blue-500 text-white transform scale-105;
+        }
+      `}</style>
     </div>
   );
 }

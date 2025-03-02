@@ -1,51 +1,129 @@
 import github from "../img/github.svg";
 import linked from "../img/linkedin.svg";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 import { useEffect } from "react";
+
 export default function Footer() {
   useEffect(() => {
-    // Desplaza la página al principio cuando se carga
     window.scrollTo(0, 0);
   }, []);
+
+  // Animaciones
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 }
+  };
+
   return (
-    <footer className=" text-enlace py-8 mt-8">
-      <div className="container mx-auto flex flex-col items-center">
-        <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 mb-6">
-        
-          <div className="flex items-center mr-10 ">
-            <i className="fas fa-phone mr-2"></i>
-            <span>+506 86057181</span>
-          </div>
-       
-          <div className="flex items-center ">
-            <i className="fas fa-envelope mr-2"></i>
-            <a
-        href="mailto:Bayronvillanea.info@gmail.com"
-        className="font-semibold  hover:underline"
-      >
-        Bayronvillanea.info@gmail.com   
-      </a>
-          </div>
-        
-          <div className="flex space-x-4">
-            <a href="https://github.com/Bayronvillanea" className="text-white  ">
-              <img src={github} className="h-6 w-6 inline-block transition-opacity hover:opacity-75" alt="GitHub"></img>
-            </a>
-            <a href="https://www.linkedin.com/in/bayron-villanea-a95277174/" className="text-white  ">
-              <img src={linked} className="h-6 w-6 inline-block transition-opacity hover:opacity-75" alt="LinkedIn"></img>
-            </a>
-          </div>
-        </div>
-        <hr className="w-11/12	 border-t border-raya mb-6" />
-        <div className="flex flex-wrap justify-center md:justify-start space-x-3 ">
-          {/* Enlaces a las secciones */}
-          <Link to={'/home'} className="text-enlace hover:underline">Home</Link>
-          <Link to={'/aboutme'} className="text-enlace hover:underline">About</Link>
-          <Link to={'/stack'} className="text-enlace hover:underline">Stack</Link>
-          <Link to={'/works'} className="text-enlace hover:underline">Projects</Link>
-          <Link to={'/contact'} className="text-enlace hover:underline">Contact</Link>
-          <Link to={'/Certificaciones'} className="text-enlace hover:underline">Certificate</Link>
-        </div>
+    <footer className=" py-12 mt-20 border-t border-gray-800">
+      <div className="container mx-auto px-4">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+          className="flex flex-col items-center space-y-8"
+        >
+          {/* Contact Info */}
+          <motion.div 
+            variants={itemVariants}
+            className="flex flex-col md:flex-row items-center gap-8 text-gray-400"
+          >
+            
+
+            <div className="flex items-center hover:text-blue-400 transition-colors">
+              <i className="fas fa-envelope mr-3 text-lg"></i>
+              <a
+                href="mailto:Bayronvillanea.info@gmail.com"
+                className="hover:underline"
+              >
+                Bayronvillanea.info@gmail.com
+              </a>
+            </div>
+
+            <div className="flex gap-6">
+              <a 
+                href="https://github.com/Bayronvillanea" 
+                className="p-2 rounded-full hover:bg-gray-800 transition-all"
+              >
+                <img 
+                  src={github} 
+                  className="h-6 w-6 hover:scale-110 transition-transform" 
+                  alt="GitHub" 
+                />
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/bayron-villanea-a95277174/" 
+                className="p-2 rounded-full hover:bg-gray-800 transition-all"
+              >
+                <img 
+                  src={linked} 
+                  className="h-6 w-6 hover:scale-110 transition-transform" 
+                  alt="LinkedIn" 
+                />
+              </a>
+            </div>
+          </motion.div>
+
+          {/* Navigation Links */}
+          <motion.div 
+            variants={itemVariants}
+            className="flex flex-wrap justify-center gap-6 text-gray-400"
+          >
+            <Link 
+              to="/home" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              Home
+            </Link>
+            <Link 
+              to="/aboutme" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              About
+            </Link>
+            <Link 
+              to="/stack" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              Stack
+            </Link>
+            <Link 
+              to="/works" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              Projects
+            </Link>
+            <Link 
+              to="/contact" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              Contact
+            </Link>
+            <Link 
+              to="/Certificaciones" 
+              className="hover:text-blue-400 hover:underline transition-colors"
+            >
+              Certificates
+            </Link>
+          </motion.div>
+
+          {/* Copyright */}
+          <motion.p 
+            variants={itemVariants}
+            className="text-gray-600 text-center text-sm mt-6"
+          >
+            © {new Date().getFullYear()} Bayron Villanea. All rights reserved.
+          </motion.p>
+        </motion.div>
       </div>
     </footer>
   );
